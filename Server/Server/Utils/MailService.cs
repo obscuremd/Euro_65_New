@@ -1,3 +1,4 @@
+using DotNetEnv;
 using MailKit.Net.Smtp;
 using MimeKit;
 
@@ -5,10 +6,15 @@ namespace Server.Utils
 {
     public class MailService
     {
-        private readonly string smtpServer = "smtp.gmail.com";
-        private readonly int smtpPort = 587;
-        private readonly string smtpUsername = "md.erhenede@gmail.com";
-        private readonly string smtpPassword = "kecv nzsn vvgc kqcx";
+        public MailService()
+        {
+            Env.Load();
+        }
+
+        private readonly string smtpServer = Environment.GetEnvironmentVariable("SMTP_SERVER") ?? "smtp.gmail.com";
+        private readonly int smtpPort = int.Parse(Environment.GetEnvironmentVariable("SMTP_PORT")?? "587");
+        private readonly string smtpUsername = Environment.GetEnvironmentVariable("SMTP_USERNAME") ?? "";
+        private readonly string smtpPassword = Environment.GetEnvironmentVariable("SMTP_PASSWORD") ?? "";
 
         
 

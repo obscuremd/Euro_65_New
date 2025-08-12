@@ -11,6 +11,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+DotNetEnv.Env.Load();
+
 
 var app = builder.Build();
 
@@ -21,7 +23,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.MapGet("/", () => "Hello world");
+app.MapGet("/", (HttpRequest request) => $"{request.Scheme}://{request.Host}/swagger/index.html");
 
 app.UseHttpsRedirection();
 

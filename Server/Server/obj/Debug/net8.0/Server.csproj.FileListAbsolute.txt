@@ -138,3 +138,4 @@ C:\Users\daniel\Desktop\02 Work\01 Coding\00 Work_Projects\02 WIP\Euro_65_New\Se
 C:\Users\daniel\Desktop\02 Work\01 Coding\00 Work_Projects\02 WIP\Euro_65_New\Server\Server\bin\Debug\net8.0\MimeKit.dll
 C:\Users\daniel\Desktop\02 Work\01 Coding\00 Work_Projects\02 WIP\Euro_65_New\Server\Server\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\daniel\Desktop\02 Work\01 Coding\00 Work_Projects\02 WIP\Euro_65_New\Server\Server\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\daniel\Desktop\02 Work\01 Coding\00 Work_Projects\02 WIP\Euro_65_New\Server\Server\obj\Debug\net8.0\Server.sourcelink.json
